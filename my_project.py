@@ -76,9 +76,9 @@
 
 #============================================#
 
-list_kor = ('Yorkshire pudding', 'Roast beef', 'A toad in a hole', 'Christmas pudding', 'Cheddar')
-for dishes in list_kor:
-    print(dishes)
-list_kor = ('Scone', 'Roast beef', 'A toad in a hole', 'Christmas pudding', 'Chicken tikka masala')
-for ferst_dishes in list_kor:
-    print(ferst_dishes)
+# list_kor = ('Yorkshire pudding', 'Roast beef', 'A toad in a hole', 'Christmas pudding', 'Cheddar')
+# for dishes in list_kor:
+#     print(dishes)
+# list_kor = ('Scone', 'Roast beef', 'A toad in a hole', 'Christmas pudding', 'Chicken tikka masala')
+# for ferst_dishes in list_kor:
+#     print(ferst_dishes)
