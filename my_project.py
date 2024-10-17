@@ -82,3 +82,69 @@
 # list_kor = ('Scone', 'Roast beef', 'A toad in a hole', 'Christmas pudding', 'Chicken tikka masala')
 # for ferst_dishes in list_kor:
 #     print(ferst_dishes)
+
+#===============================================#
+
+# alien_color = 'yellow'
+#
+# if alien_color == 'green':
+#     print('вы только что заработали 5 очков')
+# elif alien_color == 'yellow':
+#     print('вы только что получили 10 очков')
+# elif alien_color == 'red':
+#     print('вы только что получили 15 очков')
+# else:
+#     print('вы ничего не получаете')
+
+# age = int(input('Введите ваш возраст:'))
+# if age < 2:
+#     print('Вы младенец')
+# elif age >= 2 and age < 4:
+#     print('Вы малыш')
+# elif age >=4 and age < 13:
+#     print('Вы ребенок')
+# elif age >=13 and age < 20:
+#     print('Вы подросток')
+# elif age >=20 and age < 65:
+#     print('Вы взрослый')
+# else: print('Вы пожилой человек')
+
+# list = ['Яблоко', 'Апельсин', 'Ананас']
+# favorite_fruit = str(input('Какой у тебя любимый фрукт '))
+# if favorite_fruit.title() in list:
+#     print(f'You really like {favorite_fruit.title()}')
+
+#=============================================#
+
+# name_list = []
+# name = input('What is your name: ')
+# name_list.append(name)
+
+# new_name = ['Yrei', 'Vasia', 'Admin', 'Masha', 'Dima']
+# current_user = ['Natasha', 'Tania', 'Dima', 'Ruslan', 'Artem']
+#
+# for new_names in new_name:
+#     for current_users in current_user:
+#         if new_names.lower() == current_users.lower():
+#             new_name.remove(new_names)
+#             print(f'Come up with another name for your aka {new_names}\n')
+#
+# if new_name:
+#     for name_greeting in new_name:
+#         if name_greeting == 'Admin':
+#             print(f'Hello {name_greeting}, would you like to see a status report?')
+#         else: print(f'Hello {name_greeting},thank you for logging in again')
+# else: print('We need to find some users!')
+
+
+# list = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# for numbers in list:
+#     if numbers == 1:
+#         print(str(numbers)+"st")
+#     elif numbers == 2:
+#         print(str(numbers)+"nd")
+#     elif numbers == 3:
+#         print(str(numbers) + "rd")
+#     else:
+#         print(str(numbers)+"th")
+
