@@ -119,6 +119,7 @@
 # name_list = []
 # name = input('What is your name: ')
 # name_list.append(name)
+#==========
 
 # new_name = ['Yrei', 'Vasia', 'Admin', 'Masha', 'Dima']
 # current_user = ['Natasha', 'Tania', 'Dima', 'Ruslan', 'Artem']
@@ -127,7 +128,7 @@
 #     for current_users in current_user:
 #         if new_names.lower() == current_users.lower():
 #             new_name.remove(new_names)
-#             print(f'Come up with another name for your aka {new_names}\n')
+#             print(f'Come up with another name for your ak {new_names}\n')
 #
 # if new_name:
 #     for name_greeting in new_name:
@@ -136,6 +137,7 @@
 #         else: print(f'Hello {name_greeting},thank you for logging in again')
 # else: print('We need to find some users!')
 
+#======
 
 # list = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 # for numbers in list:
@@ -147,4 +149,35 @@
 #         print(str(numbers) + "rd")
 #     else:
 #         print(str(numbers)+"th")
+
+#================= Dictionary ====================
+
+# Best_friend = {
+#     'name': 'James',
+#     'age': 22,
+#     'city': 'Samara',
+# }
+# # print(Best_friend['name'])
+#
+# for key, values in Best_friend.items():
+#     print (key, values)
+
+favorite_languages = {
+'jen': 'python',
+'sarah': 'c',
+'edward': 'ruby',
+'phil': 'python',
+}
+
+programmist = ['Dima','James','Tania','Sarah']
+
+for language in set(favorite_languages.values()):
+    if 'python' in language:
+        print(f'My favorite language is {language}')
+    else:
+        print(f"These languages are not bad either {language}")
+
+for name in programmist:
+    if name.lower() not in favorite_languages.keys():
+        print (f'Какого черта вы не прошли {name}')
 
