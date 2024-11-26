@@ -162,22 +162,86 @@
 # for key, values in Best_friend.items():
 #     print (key, values)
 
-favorite_languages = {
-'jen': 'python',
-'sarah': 'c',
-'edward': 'ruby',
-'phil': 'python',
+# favorite_languages = {
+# 'jen': 'python',
+# 'sarah': 'c',
+# 'edward': 'ruby',
+# 'phil': 'python',
+# }
+#
+# programmist = ['Dima','James','Tania','Sarah']
+#
+# for language in set(favorite_languages.values()):
+#     if 'python' in language:
+#         print(f'My favorite language is {language}')
+#     else:
+#         print(f"These languages are not bad either {language}")
+#
+# for name in programmist:
+#     if name.lower() not in favorite_languages.keys():
+#         print (f'Какого черта вы не прошли {name}')
+
+# Ali = {
+#     'Surname': 'Alinize',
+#     'Middle_name': 'Djazov',
+#     'City': 'Kanzas',
+# }
+#
+# Djo = {
+#     'Surname': 'Djozovich',
+#     'Middle_name': 'Diamon',
+#     'City': 'Los_Andjeles',
+# }
+#
+# Dio = {
+#     'Surname': 'Djozef',
+#     'Middle_name': 'Kakoi-to',
+#     'City': 'Los_Pingvinis',
+# }
+#
+# people = [Ali, Djo, Dio]
+#
+# for name in people:
+#     print ('\n')
+#     for kon,bot in name.items():
+#         print(f'{kon}: {bot}')
+
+# Первый словарь: животные и их категории
+# animals1 = {
+#     "Dog": "Mammal",
+#     "Eagle": "Bird",
+#     "Shark": "Fish"
+# }
+#
+# Второй словарь: животные и их ареал обитания
+# animals2 = {
+#     "Dog": "Land",
+#     "Eagle": "Air",
+#     "Shark": "Water"
+# }
+#
+# # Список: только названия животных
+# animal_list = ["Dog", "Eagle", "Shark", "Cat"]
+#
+# for anivamls, cotegoria in animals1.items():
+#     print(f"Собака {anivamls} входит в котегорию {cotegoria}")
+
+favorite_places = {
+    'Александр': {
+        'Место': 'Горы',
+        'Хобби': 'Рисовать'
+    },
+    'Таня':{
+        'Место':'Море',
+        'Хобби':'Путешествовать'
+    },
+    'Дима':{
+        'Место':'Дом',
+        'Хобби':'Программировать'
+    }
 }
 
-programmist = ['Dima','James','Tania','Sarah']
-
-for language in set(favorite_languages.values()):
-    if 'python' in language:
-        print(f'My favorite language is {language}')
-    else:
-        print(f"These languages are not bad either {language}")
-
-for name in programmist:
-    if name.lower() not in favorite_languages.keys():
-        print (f'Какого черта вы не прошли {name}')
-
+for name, hobb in favorite_places.items():
+    mesto = hobb['Место']
+    hobbs = hobb['Хобби']
+    print(f'Это {name} он любит {mesto} и его любимое хобби {hobbs}')
