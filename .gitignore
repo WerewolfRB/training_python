@@ -1,6 +1,8 @@
 # Файлы конфигурации для venv
 venv/
 .env
+.venv/
+.venv
 
 .idea/
 .idea
