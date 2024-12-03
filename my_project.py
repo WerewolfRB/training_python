@@ -279,3 +279,51 @@ from turtledemo.sorting_animate import enable_keys
 
 # print(f"Количество используемых потоков {activeCount()}")
 # print(activeCount())
+
+# prompt = input("Введите ваш возраст: ")
+# if int(prompt) <= 3:
+#     print("Для вас билет бесплатный")
+# elif int(prompt) > 3 and int(prompt) < 12:
+#     print("Для вас билет будет стоить 10$")
+# else:
+#     print("Для вас билет будет стоить 15$")
+
+
+# while True:
+#     prompt = input('Введите возраст каждого кто пойдет в кино (если хотите просто выйти напишите "выход"): ')
+#
+#     if prompt.lower() == "выход":
+#         print('Спасибо что воспользовались нашими услугами')
+#         break
+#
+#     if not prompt.isdigit():
+#         print('Введите пожалуйста коректное число')
+#         continue
+#
+#     if int(prompt) <= 3:
+#         print("Для вас билет бесплатный")
+#     elif int(prompt) > 3 and int(prompt) < 12:
+#         print("Для вас билет будет стоить 10$")
+#     else:
+#         print("Для вас билет будет стоить 15$")
+
+# active = True
+# while active:
+#     prompt = input('Введите возраст каждого кто пойдет в кино (если хотите просто выйти напишите "выход"): ')
+#
+#     if prompt.lower() == "выход":
+#         print('Спасибо что воспользовались нашими услугами')
+#         active = False
+#         break
+#
+#     if not prompt.isdigit():
+#         print('Введите пожалуйста коректное число')
+#         continue
+#
+#     if int(prompt) <= 3:
+#         print("Для вас билет бесплатный")
+#     elif int(prompt) > 3 and int(prompt) < 12:
+#         print("Для вас билет будет стоить 10$")
+#     else:
+#         print("Для вас билет будет стоить 15$")
+
