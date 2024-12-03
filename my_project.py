@@ -266,14 +266,16 @@ from turtledemo.sorting_animate import enable_keys
 
 # ==============================While
 
-prompt = "Введите дополнение к пицце"
-prompt += "Введите 'Выйти' если хотите закончить ввод "
+# prompt = "Введите дополнение к пицце"
+# prompt += "Введите 'Выйти' если хотите закончить ввод "
+#
+# activ = True
+# while activ:
+#     dop = input(prompt)
+#     if dop == "Выйти":
+#         activ = False
+#     else:
+#         print(f"{dop.title()} Добавленно в ваш заказ")
 
-activ = True
-while activ:
-    dop = input(prompt)
-    if dop == "Выйти":
-        activ = False
-    else:
-        print(f"{dop.title()} Добавленно в ваш заказ")
-
+# print(f"Количество используемых потоков {activeCount()}")
+# print(activeCount())
