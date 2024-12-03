@@ -13,7 +13,8 @@
 # print(f'Предложение остается в силе можите прийти {name.pop(-1)}')
 # print(f'Предложение остается в силе можите прийти {name.pop(-1)}')
 # print(name)
-
+from threading import activeCount
+from turtledemo.sorting_animate import enable_keys
 
 #==================================#
 
@@ -262,4 +263,17 @@
 #     print('Ваше число кратно 10')
 # else:
 #     print("Ваше число не кратно 10")
+
+# ==============================While
+
+prompt = "Введите дополнение к пицце"
+prompt += "Введите 'Выйти' если хотите закончить ввод "
+
+activ = True
+while activ:
+    dop = input(prompt)
+    if dop == "Выйти":
+        activ = False
+    else:
+        print(f"{dop.title()} Добавленно в ваш заказ")
 
