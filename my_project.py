@@ -13,6 +13,7 @@
 # print(f'Предложение остается в силе можите прийти {name.pop(-1)}')
 # print(f'Предложение остается в силе можите прийти {name.pop(-1)}')
 # print(name)
+from symtable import Function
 from threading import activeCount
 from turtledemo.sorting_animate import enable_keys
 
@@ -327,3 +328,9 @@ from turtledemo.sorting_animate import enable_keys
 #     else:
 #         print("Для вас билет будет стоить 15$")
 
+# ==================================Function
+
+def favorite_book(favorite):
+    print (f'Моя любимая книга {favorite.title()}')
+
+favorite_book("ведьмак")
