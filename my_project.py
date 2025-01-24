@@ -330,7 +330,50 @@ from turtledemo.sorting_animate import enable_keys
 
 # ==================================Function
 
-def favorite_book(favorite):
-    print (f'Моя любимая книга {favorite.title()}')
+# def favorite_book(favorite):
+#     print (f'Моя любимая книга {favorite.title()}')
+#
+# favorite_book("ведьмак")
 
-favorite_book("ведьмак")
+
+# def city_country(city, strana):
+#     """Возвращает город и страну"""
+#     per = f"{strana} {city}"
+#     return per.title()
+#
+# mesto = city_country("Майкоп", "Россия")
+# print(mesto)
+
+# def make_album(nazvanie, ispolnitel, dorohki=''):
+#     slov = {'nazvanie': nazvanie, 'ispolnitel': ispolnitel}
+#     if dorohki:
+#         slov['dorohki'] = dorohki
+#     return slov
+#
+#
+#
+# while True:
+#     print("Добрый день, ввеите своб любимую групппу и испольнителя, можите по желанию ввести кол-во джорожек:")
+#     print("Чтобы выйти из процесса заполнения, нажмите 'q'")
+#     nazvanie = input("Песня> ")
+#     if nazvanie == 'q':
+#         break
+#     ispolnitel = input("Испольнитель> ")
+#     if ispolnitel == 'q':
+#         break
+#     dorohki = input("Дорошки> ")
+#     if dorohki == 'q':
+#         break
+#
+#     pesenki = make_album(nazvanie, ispolnitel, dorohki)
+#     print(pesenki)
+
+# def build_person(first_name, last_name, ):
+#     """Возвращает словарь с информацией о человеке."""
+#     person = {'first': first_name, 'last': last_name}
+#     if age:
+#         person['age'] = age
+#     return person
+#
+# musician = build_person('jimi', 'hendrix', age=27)
+# print(musician)
