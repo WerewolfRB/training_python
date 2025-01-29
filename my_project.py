@@ -377,3 +377,46 @@ from turtledemo.sorting_animate import enable_keys
 #
 # musician = build_person('jimi', 'hendrix', age=27)
 # print(musician)
+
+# def show_messages(letmi):
+#     """Обычное сообщение"""
+#     for letmies in letmi:
+#         print (f"Привет фрик {letmies}")
+#
+# spisochek=["Krutoi", "Echo kriche"]
+# show_messages(spisochek)
+
+
+
+
+# def show_massages(redact_masseges, no_redact_masseges):
+#     while redact_masseges:
+#         masseges = redact_masseges.pop()
+#         print(f"Перенесли {masseges}")
+#         no_redact_masseges.append(masseges)
+#     print(no_redact_masseges)
+#     print(redact_masseges)
+#
+# corentli = ['Какой то мужик', 'Пубертатная язва']
+# corentli_one = []
+# show_massages(redact_masseges=corentli, no_redact_masseges=corentli_one)
+
+
+
+def show_messages (corentli_spisok):
+    for spisok in corentli_spisok:
+        print(f"Прикольная штука {spisok}")
+
+def sent_messages (redact, no_redact):
+    while redact:
+        messages = redact.pop()
+        print(f'Перенесли элимент: {messages}')
+        no_redact.append(messages)
+    show_messages(no_redact)
+    print(no_redact)
+    print(redact)
+
+spiis = ['Крутой', 'Еще круче']
+spiisok = []
+
+sent_messages(redact=spiis, no_redact=spiisok)
