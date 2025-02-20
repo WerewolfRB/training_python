@@ -403,20 +403,181 @@ from turtledemo.sorting_animate import enable_keys
 
 
 
-def show_messages (corentli_spisok):
-    for spisok in corentli_spisok:
-        print(f"Прикольная штука {spisok}")
+# def show_messages (corentli_spisok):
+#     for spisok in corentli_spisok:
+#         print(f"Прикольная штука {spisok}")
+#
+# def sent_messages (redact, no_redact):
+#     while redact:
+#         messages = redact.pop()
+#         print(f'Перенесли элимент: {messages}')
+#         no_redact.append(messages)
+#     show_messages(no_redact)
+#     print(no_redact)
+#     print(redact)
+#
+# spiis = ['Крутой', 'Еще круче']
+# spiisok = []
+#
+# sent_messages(redact=spiis, no_redact=spiisok)
 
-def sent_messages (redact, no_redact):
-    while redact:
-        messages = redact.pop()
-        print(f'Перенесли элимент: {messages}')
-        no_redact.append(messages)
-    show_messages(no_redact)
-    print(no_redact)
-    print(redact)
 
-spiis = ['Крутой', 'Еще круче']
-spiisok = []
+# def sendvich(*sostav):
+#     print('Ваш сендвич состоит из компонентов:')
+#     for bol_sostav in sostav:
+#         print(f'> {bol_sostav}')
+#
+#
+# sendvich('Катлета', 'Огурцы', 'Сыр', 'Салатовые листья')
+#
+#
+# def make_car(marka, model, **kwargs):
+#     kwargs['mark_car']=marka
+#     kwargs['model_car']=model
+#     # Преобразуем итератор в список кортежей и создаем новый словарь
+#     reversed_dict = dict(reversed(kwargs.items()))
+#     return reversed_dict
+#
+# car = make_car('subaru', 'outback', color='blue', tow_package=True)
+# print(car)
 
-sent_messages(redact=spiis, no_redact=spiisok)
+
+#==========================import Function
+
+# import pizza
+#
+# pizza.make_pizza(16, "Тесто", "Ееще чо то", "И еще что то ")
+
+# from pizza import make_pizza as mp
+
+# from pizza import *
+#
+# make_pizza(16, "Тесто", "Ееще чо то", "И еще что то ")
+
+#
+# x=5
+#
+# print(help(x))
+#
+# spisok = (5, 6, 4, 3)
+
+# # подключаем модуль datetime
+# import datetime
+#
+# # фиксируем и выводим время старта работы кода
+# start = datetime.datetime.now()
+# print('Время старта: ' + str(start))
+#
+# myregion = "СПБ"
+#
+# regions_dict = {
+#
+# }
+#
+# found_key = None
+# for key, values in regions_dict.items():
+#     if myregion in values:
+#         found_key = key
+#         break
+#
+# if found_key is not None:
+#     print(f"Найдено! Ключ: {found_key}")
+# else:
+#     print("Регион не найден.")
+#
+# #фиксируем и выводим время окончания работы кода
+# finish = datetime.datetime.now()
+# print('Время окончания: ' + str(finish))
+#
+# # вычитаем время старта из времени окончания
+# print('Время работы: ' + str(finish - start))
+
+
+
+
+
+# import random
+#
+# # Загружаем список реальных городов (примерный список, лучше заменить на полный)
+# city_names = [
+#     "Москва", "Санкт-Петербург", "Новосибирск", "Екатеринбург", "Казань",
+#     "Нижний Новгород", "Челябинск", "Омск", "Самара", "Ростов-на-Дону",
+#     "Уфа", "Красноярск", "Воронеж", "Пермь", "Волгоград", "Краснодар",
+#     "Саратов", "Тюмень", "Тольятти", "Ижевск", "Барнаул", "Ульяновск",
+#     "Иркутск", "Хабаровск", "Ярославль", "Владивосток", "Махачкала",
+#     "Томск", "Оренбург", "Кемерово", "Рязань", "Астрахань", "Набережные Челны",
+#     "Пенза", "Липецк", "Киров", "Чебоксары", "Балашиха", "Калининград",
+#     "Курск", "Ставрополь", "Тула", "Сочи", "Тверь", "Магнитогорск",
+#     "Иваново", "Брянск", "Белгород", "Сургут", "Владимир", "Архангельск"
+# ]
+#
+# # Проверяем, есть ли достаточно уникальных городов
+# if len(city_names) < 10:
+#     raise ValueError("Недостаточно уникальных городов для генерации 10 000 записей.")
+#
+# # Функция для генерации списка синонимов (например, сокращения и вариации)
+# def generate_synonyms(city):
+#     return [city, city.lower(), city[:3], city[::-1]]  # Можно расширить по необходимости
+#
+# # Перемешиваем список и выбираем 10 000 уникальных городов
+# random.shuffle(city_names)
+# selected_cities = city_names[:10]  # Выбираем нужное количество
+#
+# # Генерация словаря из 10 000 уникальных городов
+# regions_dict = {i: generate_synonyms(city) for i, city in enumerate(selected_cities, 1)}
+#
+# # Вывод первых 10 элементов для примера
+# for key in list(regions_dict.keys())[:10]:
+#     print(key, ":", regions_dict[key])
+#
+#
+# #!/usr/bin/env python3
+#
+# # Подключаем библиотеки
+# import urllib.request
+# import json
+# import sys
+# import os
+#
+# # Проверяем наличие параметра и существавание файла
+# if len(sys.argv) < 2 or not os.path.exists(sys.argv[1]):
+#   print(0, end="")
+#   sys.exit(1)
+
+#============================================================
+# Подключаем библиотеки
+
+# import urllib.request
+# import json
+# import sys
+# import os
+#
+# # Формируем набор регионов
+# regionsList = {
+#   "краснодар": 1,
+#   "краснодарский край": 1,
+#   "республика адыгея": 1,
+#   "майкоп": 1,
+#   "москва": 2,
+#   "московская область": 2,
+#   "астрахань": 3,
+#   "астраханская область": 3
+# }
+#
+# try:
+#   with open(sys.argv[1], "rb") as fileLink:
+#     # Формируем запрос
+#     url = urllib.request.Request("https://stt.api.cloud.yandex.net/speech/v1/stt:recognize?topic=general&format=lpcm&sampleRateHertz=8000&lang=ru-RU", data=fileLink.read())
+#     url.add_header("Authorization", "Api-Key *************************")
+#
+#     # Выполняем запрос
+#     responseData = urllib.request.urlopen(url).read().decode('UTF-8')
+#     responseData = json.loads(responseData)
+#     responseRegion = responseData.get("result", "0").lower().strip();
+#
+#     # Возвращем результат
+#     print(regionsList[responseRegion] if responseRegion in regionsList else 0, end="")
+# except Exception as e:
+#   print(0, end="")
+
+#=========================================
